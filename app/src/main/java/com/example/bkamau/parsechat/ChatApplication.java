@@ -19,8 +19,8 @@ public class ChatApplication extends Application {
         ParseObject.registerSubclass(Message.class);
 
         Parse.initialize(new Parse.Configuration.Builder(this)
-                .applicationId("barse") // should correspond to APP_ID env variable
+                .applicationId("") // should correspond to APP_ID env variable
                 .addNetworkInterceptor(new ParseLogInterceptor())
-                .server("http://barse.herokuapp.com/barse/").build());
+                .server("").build());
     }
 }
